@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="ISO-8859-1">
+      <title>Index</title>
+      <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+   </head>
+   <body style="background-color:#E6E6FA">
+<a th:href="@{/getAll}" class="btn btn-primary btn-sm mb-3" >Get All Users</a>
+<a th:href="@{/getAdminUser}" class="btn btn-primary btn-sm mb-3" >Get All Admin Roles</a>
+<a th:href="@{/getAllUser}" class="btn btn-primary btn-sm mb-3" >Get All User Roles</a>
+<div class="form" style="display: flex; justify-content: center;">
+   <form action="/register" method="post" style="justify-content:center; display:compact;">
+      <h1>User Login</h1>
+      <br>
+      <div class="form-group">
+      <label for="firstname">First name</label><br/>
+      <input type="text" name="fname"/><br/>
+      </div>
+      <div class="form-group">
+      <label for="lastname">Last name</label><br/>
+      <input type="text" name="lname"/><br/>
+      </div>
+      <div class="form-group">
+      <label for="email">EMAIL</label><br/>
+      <input type="text" name="email"/><br/>
+      </div>
+      <div class="form-group">
+      <label for="role">Role</label>  
+      <select type="text" name="role">
+         <option value="User">User</option>
+         <option value="Admin">Admin</option>
+      </select>
+      </div>
+      <br/>
+      <div class="form-group">
+      <label for="address">ADDRESS(HNo City State Country)</label><br/>
+      <input type="text" name="address"/><br/>
+      </div>
+      <button type="submit">Submit</button>
+      </form>
+</div>
+   </body>
+</html>
